@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background: 
+            linear-gradient(to right, #b73686, #c879c9);
+            color: #dbdbdb;
+}
+
+/* CONTENEDOR */
+
+.container{
+    width: 1100px;
+    min-height: 620px;
+    display: grid;
+    grid-template-columns:
+        400px 1fr;
+
+    overflow: hidden;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.036);
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.25);
+}
+
+.form-section {
+    padding: 55px;
+    background-color: #0f20380f;
+    color: white;
+}
+
+.eyebrow {
+    color: #cd909f3c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+h1 {
+    margin: 15px 0;
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.description {
+    margin-bottom: 35px;
+    color: #b9c8dc;
+    line-height: 1.6;
+}
+
+/* CAMPOS */
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #42a5e8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #4e77a6;
+    color: #0f2038;
+}
+
+.message {
+    color: #cf4747;
+    font-size: 14px;
+}
+
+
+/* TAREAS */
+
+.tasks-section {
+    padding: 55px;
+}
+
+
+.tasks-header {
+    margin-bottom: 30px;
+}
+
+
+.tasks-header span {
+    color: #3688c4;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+h2 {
+    margin: 8px 0;
+
+    color: #15294f;
+
+    font-size: 30px;
+}
+
+
+.empty-message {
+    padding: 30px;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: #94a3b8;
+}
+
+
+/* TARJETA DE TAREA */
+
+.task {
+    margin-bottom: 15px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #f8fafc;
+}
+
+.task-info h3 {
+    margin: 0 0 7px;
+    color: #15294f;
+    font-size: 17px;
+}
+
+.priority {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.alta {
+    color: #dc2626;
+}
+
+.media {
+    color: #d97706;
+}
+
+.baja {
+    color: #15803d;
+}
+
+/* BOTONES DE TAREA */
+
+.task-buttons {
+    display: flex;
+
+    gap: 8px;
+}
+
+.task-buttons button {
+    width: auto;
+
+    margin: 0;
+
+    padding: 9px 12px;
+
+    font-size: 12px;
+}
+
+.complete-button {
+    background-color: #16a34a;
+}
+
+.delete-button {
+    background-color: #dc2626;
+}
+
+/* TAREA COMPLETADA */
+.task.completed {
+    opacity: 0.6;
+}
+
+.task.completed h3 {
+    text-decoration: line-through;
+}

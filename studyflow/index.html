@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studyflow</title>
+    <link rel="stylesheet" href="css/styles.css">    
+</head>
+<body>
+
+    <main class="container">
+         <! --- Formulario ---> 
+         <section  class = "form-section">
+            <spam class = "eyebrow">STUDYFLOW</spam>
+            <h1 class = "title">Organiza tus tareas</h1>
+            <p class = "description">Agrega tus actividades de estudio
+                completa tus pendientes y mantén organizado tu trabajo
+            </p>
+            
+            <form id = "task-form">
+                <label for="task">
+                    Nueva tarea
+                </label>
+                <input type="text" id = "task" 
+                placeholder = "Ej. Practicar JavaScript">
+                <label for="priority">Prioridad</label>
+                <select id = "priority">
+                    <option value = "alta">Alta</option>
+                    <option value = "media">Media</option>
+                    <option value = "baja" selected>Baja</option>
+                </select>
+                <button type = "submit"> + Agregar tarea</button>
+                <p class = "message" id = "message"></p>
+            </form>
+         </section>
+
+    </main>
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
